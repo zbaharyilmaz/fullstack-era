@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Ruge+Boogie&display=swap");
+
+*{
+  margin=0;
+  padding=0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  
+}
+.container {
+  background-color: rgb(40, 38, 38);
+  width: 90%;
+  margin: auto;
+  border-radius: 1%;
+  font-size: 1.5rem;
+  text-align: justify;
+  
+  .header{
+    text-align: center;
+  }
+  h1 {
+    font-family: "Lobster", cursive;
+    font-size: 5rem;
+  }
+  span {
+    color: red;
+  }
+  img {
+    width: 40%;
+    border-radius: 10%;
+    box-shadow: 3px 3px 200px red; 
+  }
+  .text p, ul, h3{
+    padding: 0px 100px;
+  }
+  h3 {
+    font-family: "Lobster";
+    font-size: 2rem;
+    color: red;
+  }
+  ul li {
+    line-height: 1.7;
+  }
+footer{
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px
+}
+button {
+  border-radius: 8%;
+  font-size: 1.5rem;
+  padding: 16px;
+  color: white;
+  background-color: black;
+  border: 3px solid rgb(218, 164, 16);
+  text-decoration: none;
+}
+button:hover {
+  color: red;
+  background-color: rgb(57, 55, 55);
+}
