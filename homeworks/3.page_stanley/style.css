@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: white;
+}
+header {
+  background-image: url(./background.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  align-content: center;
+}
+header h2 {
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  padding-bottom: 5px;
+  margin-bottom: 80px;
+  border-bottom: 3px solid rgb(245, 94, 169);
+  display: inline-block;
+  font-weight: lighter;
+  text-align: center;
+}
+header h3::first-letter {
+  font-size: 1.6rem;
+}
+header h1 {
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+header p {
+  font-size: 1.2rem;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+button {
+  color: white;
+  background-color: rgb(209, 27, 124);
+  border-radius: 15px;
+  font-size: 16px;
+  border-color: rgb(209, 27, 124);
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+nav {
+  word-spacing: 2rem;
+  letter-spacing: 3px;
+  font-size: 1.4rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+}
+nav a {
+  color: white;
+  display: inline-flex;
+  margin-top:10px;
+  margin-bottom:15px;
+  text-decoration: none;
+}
+main {
+  display: inline-flex;
+}
+section {
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-size: 1.3rem;
+  margin-top: 30px;
+  padding-top: 25px;
+}
+section a {
+  color: white;
+  font-size: 2rem;
+  border-radius: 100px;
+  padding: 30px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+}
+section p {
+  margin-top: 40px;
+  margin right: 30px;
+  margin left: 30px ;
+}
+.music {
+  background-color: rgb(209, 27, 124);
+}
+.user {
+  background-color: rgb(239, 239, 66);
+}
+.video {
+  background-color: rgb(107, 243, 107);
+}

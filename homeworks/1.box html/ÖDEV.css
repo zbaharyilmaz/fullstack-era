@@ -1,0 +1,51 @@
+
+*{
+   font-family: 'Times New Roman', Times, serif; 
+   color: white;
+}
+
+.container{
+    background: linear-gradient(to top left, red,orange);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 700px;
+    height: 550px;
+    margin:auto;
+}
+
+.box{
+    border-color: white;
+    height: 110px;
+    width: 150px;
+    margin: 35px;
+    place-content: center;
+    text-align: center;  
+}
+
+.none{
+    border: none white;
+}
+.dotted{
+    border: 5px dotted white;
+}
+.dashed{
+    border: 5px dashed white;
+}
+.solid{
+    border: 5px solid white;
+}
+.double{
+    border: 5px double white;
+}
+.groove{
+    border: 5px groove white;
+}
+.ridge{
+    border: 5px ridge white;
+}
+.inset{
+    border: 5px inset white;
+}
+.outset{
+    border: 5px outset white;
+}
