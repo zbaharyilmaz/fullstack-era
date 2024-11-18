@@ -224,7 +224,6 @@ console.log(check(array));
     }
     console.log(lengthOf(array));
     }
-//!Q18.Bir dizideki alt dizileri düz bir liste haline getiren bir fonksiyon yazın.
 //!Q19.Bir dizideki kelimeleri harflere ayırıp düz bir liste haline getiren bir fonksiyon yazın. 
 //&bakınız:concat vs push
 {
