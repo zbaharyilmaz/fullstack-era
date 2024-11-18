@@ -172,3 +172,46 @@ function biggestNumber(){
 console.log(biggestNumber(numbers));
 }
 //!Q14.Bir dizideki her elemanı 3 artıran bir fonksiyon yazın (diziyi yerinde değiştirerek).
+{
+    let numbers = [1, -20, 7, 100, 12];
+    function adding3(){
+        for (let i = 0; i < numbers.length; i++) {
+          numbers[i]=numbers[i]+3;   
+        }
+        return numbers;   
+    }
+    console.log(adding3(numbers));
+    }
+//!Q15.Bir dizide ilk defa 10 olan elemanın indeksini döndüren bir fonksiyon yazın.
+//&chatgpt bakalım.
+{
+let array = [1, -20, 7, 10, 12];
+let result;
+const check=()=>{
+    for(let i=0;i<array.length ;i++){
+       if(array[i]===10){
+        return result=`Bu elemanın indexi ${i} tür.`
+       }  
+    }
+}
+console.log(check(array));
+}
+
+//!Q16.Bir dizide tüm sayıların pozitif olup olmadığını kontrol eden bir fonksiyon yazın.
+{
+    let numbers = [1, -1, 7, 10, 21];
+    let result;
+    function numberPositive() {
+      for (let i = 0; i < numbers.length; i++) {
+         if(numbers[i]<=0) {
+            result= "There is some nötr/negative numbers in the array."
+        }
+      }
+      else{
+        result="All of them are positive."
+    } 
+    return result;
+    }
+    console.log(numberPositive(numbers));
+  }
+  
