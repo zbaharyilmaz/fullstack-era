@@ -1,0 +1,26 @@
+Artık ısındım soruları
+Fibonacci Serisi Bulma: Kullanıcının girdiği sayıya kadar olan Fibonacci serisini hesaplayan bir fonksiyon yazın.
+Asal Sayı Kontrolü: Kullanıcıdan alınan sayının asal olup olmadığını kontrol eden bir fonksiyon yazın.
+Sayıların Tersini Bulma: Bir sayının tersini 123  321 gibi) bulan bir fonksiyon yazın.
+Js function assignment 1
+😊
+😇
+Mükemmel Sayı Kontrolü: Bir sayının kendisinden başka tüm bölenlerinin toplamı kendisine eşitse mükemmel sayıdır (örn. 6  1  2  3. Bu tanıma uyan sayıları bulan bir fonksiyon yazın.
+Armstrong Sayısı Kontrolü: Girilen bir sayının basamaklarının küplerinin toplamı kendisine eşitse Armstrong sayısıdır (ör. 153  13  53  33). Bu tür sayıları bulan bir fonksiyon yazın.
+İki Sayının EBOB'unu Bulma: Kullanıcıdan iki sayı alarak, bu iki sayının en büyük ortak bölenini EBOB bulan bir fonksiyon yazın.
+Bir Sayının Basamaklarının Toplamını Bulma: Kullanıcının girdiği sayının basamaklarının toplamını hesaplayan bir fonksiyon yazın.
+Dört Basamaklı Palindrom Sayıları Bulma: 1000 ile 9999 arasındaki palindrom (tersi kendisine eşit) sayıları ekrana yazdıran bir fonksiyon yazın.
+Rakamları Arasında Belirli Bir Sayı Farkı Olan Sayılar: Kullanıcıdan iki sayı aralığı alarak, rakamları arasındaki fark belirli bir değere eşit olan sayıları bulup listeleyen bir fonksiyon yazın.
+Bir Sayıyı Basamaklarına Ayırma: Verilen bir sayıyı basamaklarına ayırarak her basamağı tek tek gösteren bir fonksiyon yazın.
+Pascal Üçgeni Yazdırma: Girilen satır sayısı kadar Pascal Üçgeni'ni yazdıran bir fonksiyon oluşturun.
+Bir Sayının Tam Bölenlerini Bulma: Kullanıcının girdiği sayının tüm tam bölenlerini bulan bir fonksiyon yazın.
+İki Sayının EKOK'unu Bulma: Kullanıcıdan iki sayı alarak, bu iki sayının en küçük ortak katını EKOK bulan bir fonksiyon yazın.
+Üçgen mi, Çember mi Daha Büyük Alan? Kullanıcıdan bir üçgenin kenar uzunluklarını ve bir çemberin yarıçapını alarak, hangi şeklin daha büyük alana sahip olduğunu bulan bir fonksiyon yazın.
+Bir Sayıyı Üç Basamaklı Yapma: Verilen sayının üç basamaklı bir sayı olacak şekilde önüne sıfır ekleyen bir fonksiyon yazın (örn. 7  007.
+Sayının Faktöriyelini Hesaplama: Kullanıcıdan alınan sayının faktöriyelini hesaplayan bir fonksiyon yazın.
+Üslü Sayı Hesaplama: Kullanıcıdan taban ve üs değeri alarak, bu iki sayıyı kullanarak üslü sayı işlemi gerçekleştiren bir fonksiyon yazın.
+Js function assignment 2
+
+Bir Sayıyı Binary İkili) Sisteme Çevirme: Kullanıcının girdiği bir sayıyı ikili (binary) sisteme çeviren bir fonksiyon yazın.
+Pi'nin İlk N Basamağını Yazdırma: Girilen sayı kadar Pi'nin ilk basamağını ekrana yazdıran bir fonksiyon yazın Pi  3.14159... olarak kabul edin).
+Sayının Sayı Basamağı Olup Olmadığını Bulma: Kullanıcıdan bir sayı alarak, bu sayının içinde belirli bir basamak olup olmadığını kontrol eden bir fonksiyon yazın (örn. 752 içinde "5" rakamı var mı?.
