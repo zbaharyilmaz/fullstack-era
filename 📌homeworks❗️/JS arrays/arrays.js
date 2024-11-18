@@ -199,19 +199,56 @@ console.log(check(array));
 
 //!Q16.Bir dizide tüm sayıların pozitif olup olmadığını kontrol eden bir fonksiyon yazın.
 {
-    let numbers = [1, -1, 7, 10, 21];
-    let result;
+    let numbers = [1, 1, -7, 10, 21];
     function numberPositive() {
       for (let i = 0; i < numbers.length; i++) {
          if(numbers[i]<=0) {
-            result= "There is some nötr/negative numbers in the array."
+            return false;
         }
       }
-      else{
-        result="All of them are positive."
-    } 
-    return result;
+    return true;
     }
     console.log(numberPositive(numbers));
   }
-  
+//!Q17.Bir dizideki 4 karakterden uzun kelimeleri döndüren bir fonksiyon yazın.
+{
+    let array=["Aslı","Bahar","Leman","Ada"];  
+    let result=[];
+    function lengthOf(){
+        for (let i = 0; i < array.length; i++) {
+            if (array[i].length>4){
+                result.push(array[i]);
+            } 
+        }
+         return result;     
+    }
+    console.log(lengthOf(array));
+    }
+//!Q18.Bir dizideki alt dizileri düz bir liste haline getiren bir fonksiyon yazın.
+//!Q19.Bir dizideki kelimeleri harflere ayırıp düz bir liste haline getiren bir fonksiyon yazın. 
+//&bakınız:concat vs push
+{
+    let array=["Aslı","Bahar"];  
+    let result=[];
+    function letter(){
+        for (let i = 0; i < array.length; i++) {
+            result=result.concat(array[i].split(""))
+        }
+         return result;     
+    }
+    console.log(letter(array));
+    }
+//!Q20.Bir dizide çift sayıların toplamını hesaplayan bir fonksiyon yazın.
+{
+    let numbers = [1, 20, 7, 10, 12];
+    let sum=0;
+    function evenSum() {
+      for (let i = 0; i < numbers.length; i++) {
+        if(numbers[i]%2===0){
+            sum+=numbers[i];
+        }
+        }
+      return sum;
+    }
+    console.log(evenSum(numbers));
+  }
