@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width:100%;
+    height: 100vh;
+}
+.container{
+    background-image: url(./img/trees.png),url(./img/bg.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.leaves img{
+    margin:1rem 3rem;
+    animation: fall 6s ease-in infinite;
+}
+.girl{
+    margin-bottom: 25vh;
+    animation: action 5s ease-in infinite;
+}
+.girl img{
+   max-width:30vh;
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg); 
+    }
+   
+    100% {
+        transform: translateY(1000px) rotate(360deg);
+    }
+}
+@keyframes action {
+    from{
+        transform: translateX(500px);
+    }
+    to{
+        transform: translateX(-900px);
+    }
+}
