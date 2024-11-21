@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 /* font-family: "Victor Mono", monospace;
-
-font-family: "IBM Plex Mono", monospace;
  */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Comfortaa", sans-serif;
+    scroll-behavior: smooth;      /*geçişin smooth olsun.*/
 }
 :root{
-    --bg-color:#212a34;
-    --second-bg-color:#353f4e;
-    --text-color:#fff;
-    --main-color:#d80404;
+    --bg-color:#320A59;
+    --second-bg-color:#3b0b6c;
+    --text-color:#eee4cb;
+    --main-color:#ab0bef; /*magenta*/
+
+    
 }
 body{
     background-color: var(--bg-color);
@@ -29,6 +30,13 @@ header{
     /* align-items: center; */
     padding: 2rem 5rem;
     flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: var(--bg-color);
+
 
 }
 .logo{
@@ -49,4 +57,164 @@ header{
 .navbar a:hover,
 .navbar a:active{
     color: var(--main-color);
+}
+section{
+    min-height:100vh;         /* min-height değerleri! */
+    padding: 0 10rem;
+
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.home-content{
+    width: 80%;     /
+}
+.home-img{
+  
+    width: 20%;
+
+}
+.home-img img{
+    width: 100%;    /*bunu yapmazsan foto taşar. taşıyıcısına hapset*/
+    border-radius: 10%;
+}
+.home-content h3{
+    font-size: 2rem;
+    font-weight: 700;  
+}
+.home-content .title{
+   
+}
+.home-content .name{
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.3;
+}
+.info{
+    font-family: "IBM Plex Mono", monospace;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+.social-media{ 
+ display: flex;
+ gap:2rem;
+ /* justify-content: space-evenly; */
+}
+.social-media a{
+    width: 2.5rem;     /*butonların hoverında arka görüntüde problem yaşamamak için.*/
+    height: 2.5rem;
+    font-size: 3rem;
+    color: var(--main-color);
+    margin: 5rem 2rem;
+    display: flex;       /*butonların hoverında arka görüntüde problem yaşamamak için.*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.social-media a:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 3rem var(--main-color);
+}
+.btn{
+    background-color: var(--main-color);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem var(--main-color);
+    color: var(--second-bg-color);
+    letter-spacing: 0.5rem;     /*yazıların arasını açmak*/
+    font-weight: 600;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--second-bg-color);
+}
+.about-img{
+    width: 25%;
+
+}
+.about-content{
+    width: 75%;
+
+}
+.about-img img{
+    width:100%;
+    max-width: 20rem;
+    border-radius: 10%;
+}
+.heading{
+    text-align: center;
+    font-size: 3rem;
+}
+.about-content h3{
+    font-size:1.5rem ;
+}
+.about-content p{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    margin: 3rem 0;
+}
+span{
+    color:var(--main-color);
+}
+.skills{
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+}
+.skills .heading{
+    margin-top: 4rem;
+}
+.skills-container{
+    margin-top:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.skills-box{
+    width: 20%;
+    flex:1 1 20rem;
+    background-color: var(--second-bg-color);
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--bg-color);
+    transition:all 1s ease-in;
+    padding: 1rem;
+}
+.skills-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    box-shadow:0 0 3rem var(--main-color);
+}
+.skills-box i{
+    font-size: 5rem;
+    color: var(--main-color);
+}
+.skills-box h3{
+    font-size: 2rem;   
+}
+.skills-box p{
+    font-size: 0.7rem;
+    margin: 1rem;
+    text-align: justify; 
+}
+.projects{
+
+}
+.projects h2{
+    
+}
+.projects-container{
+    
+}
+.projects-box{
+    
 }
