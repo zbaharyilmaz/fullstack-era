@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    text-decoration: none solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    height: 100vh;
+  }
+  
+  header {
+    /* width: 1366px; */
+    width: 100vw;
+    height: 134px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  .logo {
+    margin-left: 40px;
+    cursor: pointer;
+    transition: transform 0.6s; //active değil,div e ver.
+    
+  }
+  
+  .logo:hover {
+    transform: rotate(360deg) scale(1.5);
+    
+  }
+  
+  nav a {
+    margin-right: 45px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    color: black;
+    text-decoration: none;
+  }
+  
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Çizgiyi metnin altına yerleştir */
+    width: 0; /* Başlangıçta genişlik 0 olacak */
+    height: 2px; /* Çizginin kalınlığı */
+    background-color: #8a1c4a; /* Çizginin rengi */
+    transition: width 0.4s ease-in-out; /* Geçiş süresi */
+  }
+  
+  nav a:hover {
+    color: #8a1c4a;
+  }
+  
+  nav a:hover::after {
+    width: 100%; /* Hover durumunda genişliği tam yap */
+  }
+  
+  main {
+    height: 319px;
+    text-align: center;
+    margin-top: 125px;
+  }
+  
+  h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #8a1c4a;
+    text-decoration: none solid rgb(138, 28, 74);
+    animation: fall;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+  }
+  
+  .gallery img {
+    position: relative;
+    margin-top: 50px;
+    /* margin-left: 120px; */
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    animation-name: normal;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transition: transform 0.6s;
+  }
+  
+  .gallery:hover img {
+    animation: none;
+  }
+  
+  .gallery img:hover {
+    /* animation-name: big;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;    
+    animation-fill-mode: both;
+    animation-iteration-count: 1; */
+    transform: scale(2.5);
+    z-index: 1;
+    transition: transform 1s;
+  }
+  
+  footer {
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 90px;
+  }
+  
+  footer i {
+    margin-left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  
+  footer i:hover {
+    color: #8a1c4a;
+    transform: rotate(360deg);
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-500px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes big {
+    0% {
+      z-index: 1;
+    }
+    100% {
+      transform: scale(2.5);
+      z-index: 1;
+    }
+  }
+  
+  @keyframes normal {
+    100% {
+      transform: scale(1.5);
+    }
+  }
