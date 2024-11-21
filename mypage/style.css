@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* font-family: "Victor Mono", monospace;
+
+font-family: "IBM Plex Mono", monospace;
+ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+}
+:root{
+    --bg-color:#212a34;
+    --second-bg-color:#353f4e;
+    --text-color:#fff;
+    --main-color:#d80404;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+body a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 2rem 5rem;
+    flex-wrap: wrap;
+
+}
+.logo{
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 600;
+    font-family: "Orbitron", sans-serif;
+}
+.navbar{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.navbar a{
+    font-size: 1rem;
+    /* color: var(--text-color); */
+}
+.navbar a:hover,
+.navbar a:active{
+    color: var(--main-color);
+}
