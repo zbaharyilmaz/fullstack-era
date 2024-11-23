@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Ruge+Boogie&family=Sixtyfour+Convergence&display=swap');
+
+:root{
+    --primary-color:#bc6c25;
+    --secondary-color: #4d3822;
+    --hover-color: #e76f51;
+    --section-color: #b78752;
+}
+*{
+    font-family:"Plus-Jakarta Sans,serif"
+}
+.navbar{
+    position: fixed;
+    z-index:5;
+    width: 100%;
+
+}
+.navbar-nav{
+    font-size: 1.3rem;
+    text-transform: capitalize;   
+    /* dikkat */
+}
+.navbar .container{
+    background-color: rgba(0, 0, 0,0.7)!important;
+}
+.nav-link{
+    color:white !important;
+}
+.nav-link:hover{
+    color: var(--primary-color) !important;
+}
+.carousel-caption{
+    position:absolute;
+    bottom:40%;
+}
+.carousel-caption .btn{
+    background-color: var(--primary-color);
+    border:none;
+    width: 10rem;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+}
+.carousel-caption .btn:first-child{
+    background-color: transparent;
+}
+.carousel-caption .btn:first-child:hover{
+    background-color: white;
+    color: black;
+}
+.carousel-caption{
+    bottom: 40%;
+}
+.carousel-item{
+    height: 100vh;   
+}
+.carousel-item{
+    width: 100%;
+    object-fit: cover;
+    /* ÖNEMLİ foto sünmesin diye, container height 100, foto width 100%, ve object-fit*/
+}
+.hero{
+    position: relative;
+    z-index:3;
+}
+.black{
+    background-color: rgb(0, 0, 0,0.7);
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.carousal-indicators{
+    gap: 0.7rem;
+}
+.carousal-indicators button{
+background-color: var(--primary-color) !important;
+padding: 0.1rem !important;
+width: 3rem !important;
+}
