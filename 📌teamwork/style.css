@@ -1,0 +1,15 @@
+.banner{
+    background: url(./img/banner.jpeg) center center no-repeat;
+    background-size:cover;
+    color: purple;
+    
+}
+.icon{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+.contact {
+  background: url('./img/map.jpeg') center center no-repeat;
+  background-size: cover;
+}

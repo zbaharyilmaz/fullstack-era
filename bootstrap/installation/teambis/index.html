@@ -1,378 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Teamwork</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- NAVBAR shadow-lg fixed-top-->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg text-center"
-    >
-      <div class="container-fluid">
-        <div class="harvey ms-5">
-          <a class="navbar-brand fs-4 ms-4" href="#">Harvey Tech</a>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto me-5 text-secondary fs-6 p-1">
-            <li class="nav-item">
-              <a class="nav-link" href="services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="staff">Staff</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactus">Contact us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teamwork</title>
 
-    <!-- BANNER -->
-    <div class="container-fluid banner">
-      <div class="container text-center">
-        <h4 class="display-5">The IT Career of Your Dreams Starts Here!</h4>
-        <h2 class="display-1">Harvey Tech!</h2>
-        <a href="#services">
-          <button type="button" class="btn btn-danger fs-4 px-3 my-2">
-            Our Services
-          </button></a
-        >
-      </div>
-    </div>
-    <!-- SERVICES -->
-    <div class="container-fluid">
-      <div class="container text-center pb-5 pt-5 fs-5">
-        <h2 class="display-2" id="services">Services</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore,
-          molestias!
-        </p>
-        <div class="row">
-          <div class="col-md-4 mt-3">
-            <span class="circle display-1"
-              ><i class="fa-solid fa-code"></i
-            ></span>
-            <h3 class="mt-4 fw-bold">Programing</h3>
-            <!-- i ler neye konur -->
-            <p class="fs-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-              veniam.
-            </p>
-          </div>
-          <div class="col-md-4 mt-3">
-            <span class="circle display-1"
-              ><i class="fa-solid fa-palette"></i
-            ></span>
-            <h3 class="mt-4 fw-bold">Design</h3>
-            <p class="fs-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-              veniam.
-            </p>
-          </div>
-          <div class="col-md-4 mt-3">
-            <span class="circle display-1"
-              ><i class="fa-solid fa-network-wired"></i
-            ></span>
-            <h3 class="mt-4 fw-bold">Networking</h3>
-            <p class="fs-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-              veniam.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- PORTFOLIO -->
-    <div class="container-fluid pt-5 pb-5 text-bg-light">
-      <div class="container text-center fs-5">
-        <div class="row">
-          <h2 class="display-2" id="#portfolio">Portfolio</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            quibusdam saepe nihil nisi enim repellendus labore maxime temporibus
-            quis nam, fuga nemo nobis eligendi itaque.
-          </p>
-          <div class="col-md-4 col-lg-4 col-sm-12 p-2">
-            <div class="card">
-              <img src="./img/student1.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5>Lorem, ipsum dolor.</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-12 p-2">
-            <div class="card">
-              <img src="./img/student2.jpg" alt="" />
-              <div class="card-body">
-                <h5>Lorem, ipsum dolor.</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-12 p-2">
-            <div class="card">
-              <img src="./img/student3.jpg" alt="" />
-              <div class="card-body">
-                <h5>Lorem, ipsum dolor.</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-12 p-2">
-            <div class="card">
-              <img src="./img/student4.jpg" alt="" />
-              <div class="card-body">
-                <h5>Lorem, ipsum dolor.</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-12 p-2">
-            <div class="card">
-              <img src="./img/student5.jpg" alt="" />
-              <div class="card-body">
-                <h5>Lorem, ipsum dolor.</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-12 p-2">
-            <div class="card">
-              <img src="./img/student6.jpg" alt="" />
-              <div class="card-body">
-                <h5>Lorem, ipsum dolor.</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ABOUT US -->
-    <div class="container-fluid">
-      <div class="container text-center pt-5 pb-5 fs-5">
-        <h2 class="display-2" id="aboutus">About us</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore,
-          molestias!
-        </p>
-        <div class="row pt-5">
-          <div class="col-lg-6 col-md-6 text-start">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae perferendis asperiores officiis corporis, repellat
-              consequatur.
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae perferendis asperiores officiis corporis, repellat
-              consequatur.
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae perferendis asperiores officiis corporis, repellat
-              consequatur.
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae perferendis asperiores officiis corporis, repellat
-              consequatur.
-            </p>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <img
-              src="./img/aboutus.jpeg"
-              class="key"
-              width="650px"
-              height="350px"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- STAFF -->
-    <div class="container-fluid bg-light">
-      <div class="container text-center pb-5 pt-5 fs-5">
-        <h2 class="display-2" id="staff">Our Team</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime optio
-          itaque aliquam aperiam tenetur vel totam fugit dolores ducimus
-          perspiciatis!
-        </p>
-        <div class="row">
-          <div class="col-md-4 mt-3">
-            <a href=""
-              ><img
-                src="./img/mark.jpeg"
-                class="team rounded-circle"
-                width="300px"
-            /></a>
-            <h4 class="mt-3">Mark Madisson</h4>
-            <p>Web Developer</p>
-            <p>
-              <a href="" class="social"><i class="fa-brands fa-twitter"></i></a>
-              <a href="" class="social"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a href="" class="social"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-            </p>
-          </div>
-          <div class="col-md-4 mt-3">
-            <a href=""
-              ><img
-                src="./img/N.png"
-                alt=""
-                class="team rounded-circle"
-                width="300px"
-            /></a>
-            <h4 class="mt-3">Noah Adams</h4>
-            <p>FullStack Developer</p>
-            <p>
-              <a href="" class="social"><i class="fa-brands fa-twitter"></i></a>
-              <a href="" class="social"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a href="" class="social">
-                <i class="fa-brands fa-linkedin-in"></i
-              ></a>
-            </p>
-          </div>
-          <div class="col-md-4 mt-3">
-            <a href=""
-              ><img
-                src="./img/harvey.png"
-                alt=""
-                class="team rounded-circle"
-                width="300px"
-            /></a>
-            <h4 class="mt-3">Harvey Watson</h4>
-            <p>Mobile Developer</p>
-            <p>
-              <a href="" class="social"><i class="fa-brands fa-twitter"></i></a>
-              <a href="" class="social"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a href="" class="social">
-                <i class="fa-brands fa-linkedin-in"></i
-              ></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- CONTACT US -->
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 p-5 d-flex justify-content-between">
-            <img class="client" src="./google-logo.png" alt="" />
-            <img class="client" src="./ibm-logo.png" alt="" />
-            <img class="client" src="./amazon-logo.png" alt="" />
-            <img class="client" src="./ing.logo.png" alt="" />
-            <img class="client" src="./siemens-logo.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid contact pt-5 pb-5 fs-4">
-      <div class="container text-center">
-        <h2 class="display-3">Contact us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, officiis!</p>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <input
-              type="name"
-              class="form-control p-3 mb-3"
-              id="exampleFormControlInput1"
-              placeholder="Name"
-            />
-            <input
-              type="email"
-              class="form-control p-3 mb-3"
-              id="exampleFormControlInput2"
-              placeholder="Email"
-            />
-            <input
-              type="phone"
-              class="form-control p-3 mb-3"
-              id="exampleFormControlInput3"
-              placeholder="Phone Number"
-            />
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="8"
-            ></textarea>
-          </div>
-          <a href=""><button class="btn btn-danger py-2 px-4 fs-5 mt-2">Send Message</button></a>
-        </div>
-      </div>
-    </div>
-    <div class="container text-center pt-5 pb-5">
-      All Rights Reserved &copy; 2025
-    </div>
+    <!-- BOOTSTRAP CSS -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+
+    <!-- FONTAWESOME CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="./style.css" />
+
+
+</head>
+
+<body>
+
+  <!--NAVBAR-->
+
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Harvey Tech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="staff">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
