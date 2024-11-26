@@ -1,0 +1,16 @@
+.banner {
+    background: url('./img/banner.jpeg') center center no-repeat;
+    background-size: cover;
+    color: purple;
+  }
+  .icon{
+      width: 150px;
+      height: 150px;
+  }
+  .team{
+      border: 10px solid rgb(180, 178, 178) !important;
+  }
+  .contact {
+    background: url('./img/map.jpeg') center center no-repeat;
+    background-size: cover;
+  }
