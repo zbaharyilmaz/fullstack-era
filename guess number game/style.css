@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  min-width: 100wv;
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(69.7deg, rgba(244, 37, 243, 1) 1.4%, rgba(244, 87, 1, 1) 36.2%, rgba(255, 204, 37, 1) 72.2%, rgba(20, 196, 6, 1) 113%);
+  font-family: 'Caveat Brush', cursive;
+}
+
+.card {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 1);
+  /* Kartın basit gölgesi */
+  border-radius: 10px;
+  padding: 2rem;
+  background-image: linear-gradient(69.7deg, rgba(244, 37, 243, 1) 1.4%, rgba(244, 87, 1, 1) 36.2%, rgba(255, 204, 37, 1) 72.2%, rgba(20, 196, 6, 1) 113%);
+}
+
+.card:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  /* Hover durumunda daha belirgin gölge */
+}
+
+.head {
+  color: #00ff00;
+  animation-name: action;
+  animation-duration: 15s;
+  animation-timing-function: cubic-bezier(0.02, 0.6, 0.63, -0.06);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 50px;
+  text-shadow: 0 1px 0 #999999, 0 2px 0 #888888, 0 3px 0 #777777, 0 4px 0 #666666, 0 5px 0 #555555, 0 6px 0 #444444, 0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4), 0 9px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+#send,
+#guess,
+#reset {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-image: linear-gradient(to right, #FDFC47 0%, #24FE41 51%, #FDFC47 100%);
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: none;
+}
+
+#reset {
+
+  background-image: linear-gradient(to right, #ee0979 0%, #ff6a00 51%, #ee0979 100%);
+  padding: 4px 20px;
+  /* Reset butonunun boyutunu artırdık */
+  font-size: 22px;
+  /* Reset butonunun font boyutunu büyüttük */
+}
+
+#send {
+  padding: 4px 25px;
+  /* Send butonunun boyutunu arttırdık */
+  font-size: 22px;
+  /* Send butonunun font boyutunu büyüttük */
+}
+
+#reset:hover {
+  color: white;
+  background-position: right center;
+  text-decoration: none;
+}
+
+#send:hover {
+  color: blue;
+  background-position: right center;
+  text-decoration: none;
+}
+
+#guess:hover {
+  color: magenta;
+  background-position: right center;
+  text-decoration: none;
+  -webkit-appearance: none;
+
+}
+
+@keyframes action {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  25% {
+    transform: rotate(5deg) scale(1.5);
+  }
+
+  50% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  75% {
+    transform: rotate(-5deg) scale(0.5);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+ #send, #reset{
+  width: 100%;
+ }
+.row{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#reset:hover, #send:hover {
+  color: white;
+  background-position: right center;
+  text-decoration: none;
+}
+.card{
+  max-width: 100%;
+}
+.h1{
+  font-size: 1rem;
+}
+}
+@media (max-width: 480px) {
+  .head {
+    font-size: 35px;  /* Daha küçük ekranlar için daha da küçült */
+  }
