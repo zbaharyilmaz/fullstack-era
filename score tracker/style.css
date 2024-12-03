@@ -61,6 +61,6 @@ button{
 .b3{
     background-color: rgb(246, 67, 67);
 }
-
-
-
+.message{
+    font-size: 2rem;
+}
