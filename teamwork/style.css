@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+}
+.container{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content:flex-start;
+    /* align-items: center; */
+    text-align: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100vw;
+}
+.win{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    gap: 0.3rem;
+}
+.scores{
+    margin: 0.5rem;
+    font-weight: bolder;
+}
+.ikiDeger{
+    margin: 0.5rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.tennis img{
+    max-width: 30%;
+    height: auto;
+}
+.classButton{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 3%;
+}
+button{
+    width: 10rem;
+    height: 3rem;
+    margin: 0.1rem;
+    border-radius: 0;
+    border: none;
+}
+.b1{
+    background-color: rgb(64, 185, 237);
+}
+.b2{
+    background-color: greenyellow;
+}
+.b3{
+    background-color: rgb(246, 67, 67);
+}
+
+
+
