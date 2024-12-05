@@ -1,0 +1,46 @@
+@media screen and (max-width:1220px){
+    #Header{
+        h2{
+            margin-top: 3rem;
+            font-weight: 100;
+            @include fadeIn;
+        }
+        height:85vh;
+        img{
+            margin:20vh auto;
+        }
+    }
+    #Movie{
+        flex-direction: column;
+        h2, i{
+            margin-bottom: $xxl;
+        }
+    }
+}
+@media screen and (max-width:600px){
+    #Navigation{
+        ul{
+            display: none;
+        }
+    }
+    #Header{
+        img{
+            margin: 20vh auto;
+            transform: scale(0.4);
+        }
+    }
+    #Movie{
+        h2{
+            font-size:$lg;
+        }
+        img{
+            height: 280px;
+        }
+    }
+    #Latest-news{
+      text-align: center;
+      image-rendering: {
+        width: 380px
+      };
+    }
+}

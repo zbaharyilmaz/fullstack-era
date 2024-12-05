@@ -1,0 +1,26 @@
+.btn {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  margin: 0.25rem 0.125rem;
+  padding: 0.375rem 0.75rem;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+  &-gold {
+    background: $gold;
+    color: #fff;
+    box-shadow: 0 0 15px 3px rgba($gold, 0.25);
+    &:hover {
+      background: darken($gold, 25%);
+      box-shadow: 0 0 15px 3px rgba($gold, 0.4);
+      transition: 0.3s ease;
+    }
+    transition: 0.3s ease;
+  }
+}

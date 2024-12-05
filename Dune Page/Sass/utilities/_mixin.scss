@@ -1,0 +1,25 @@
+@mixin d-flex {
+  display: flex;
+  flex-direction: row;
+  &-column {
+    flex-direction: column;
+  }
+  justify-content: center;
+  align-items: center;
+}
+@mixin fadeIn {
+  animation: fadeIn 5s ease;
+  @keyframes fadeIn {
+    0% {
+      oppacity: 0;
+      filter: blur(5px);
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
