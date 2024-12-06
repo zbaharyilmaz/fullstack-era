@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    padding: 1rem;
+}
+
+header a img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+section.sign {
+    float: right;
+    padding-top: 2rem;
+    padding-right: 0.5rem;
+    color: azure;
+}
+
+header .sign a {
+    text-decoration: none;
+    color: azure;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+header .sign a:hover {
+    border-bottom: 2px solid azure;
+    color: azure;
+}
+
+nav.sticky {
+    padding: 1.5rem;
+    background-color: #9bb2eb;
+    background-image: linear-gradient(135deg, #7d8bd8 0%, #9599E2 100%);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav.sticky a {
+    text-decoration: none;
+    margin: 1.5rem;
+    color: rgb(244, 221, 137);
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.7rem;
+}
+
+nav.sticky a:hover {
+    border-bottom: 2px solid rgb(244, 221, 137);
+    color: rgb(244, 221, 137);
+}
+
+nav.banner {
+    position: relative;
+}
+
+nav.banner img {
+    width: 100%;
+    max-height: 70vh;
+}
+
+section.write {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-family: "Chakra Petch", sans-serif;
+    color: rgb(244, 221, 137);
+    padding: 0.5rem;
+}
+
+button {
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: rgb(227, 205, 177);
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+section.write h2 {
+    text-shadow: 0 3px 4px black;
+}
+
+section.write h4 {
+    font-size: 1.5rem;
+    color: rgb(244, 40, 61);
+    text-shadow: 0 3px 4px black;
+}
+
+main {
+    padding: 2rem;
+    text-align: justify;
+}
+
+main p {
+    margin: 10px;
+}
+
+.slack {
+    font-size: 2.5rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 1px;
+    background-color: rgb(244, 40, 61);
+}
+
+.slack:hover {
+    outline: 2px solid rgb(244, 40, 61);
+    outline-offset: 4px;
+}
+
+.slack a {
+    color: azure;
+}

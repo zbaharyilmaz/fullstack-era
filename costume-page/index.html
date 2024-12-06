@@ -1,89 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./costumepage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Flex Example Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./style.css">
+    <title>Burak Kostüm</title>
 </head>
-
 <body>
     <header>
-        <div class="left">
-            <a href="#">
-                <img src="./images/mask.png" alt="">
+        <div class="header-content">
+            <a href="#" class="logo">
+                <img src="./images/mask.png" alt="Logo">
             </a>
-        </div>
-        <div class="middle">
             <h1>Burak Kostüm</h1>
-        </div>
-        <div class="right">
-            <a href="#">
-                <i class="fab fa-x-twitter"></i>
-            </a>
-            <a href="#">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#">
-                <i class="fab fa-facebook"></i>
-            </a>
+            <div class="social-icons">
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-facebook"></a>
+            </div>
         </div>
     </header>
-    <nav class="sticky">
+    <nav class="navigation">
         <a href="#">Çocuk Kostümleri</a>
         <a href="#">Yetişkin Kostümleri</a>
         <a href="#">Hayvan Kostümleri</a>
         <a href="#">Konsept Kostümler</a>
         <a href="#">Kiralık Kostümler</a>
     </nav>
-    <nav class="banner">
-        <a href="">
-            <img src="./images/bck.jpg" alt="">
-        </a>
-    </nav>
+    <section class="banner">
+        <img src="./images/bck.jpg" alt="Banner">
+    </section>
     <main>
         <section class="info">
-            <li>
-                <ul>Mağazadan Teslim Al</ul>
-                <ul>Hızlı Kargo</ul>
-                <ul>Güvenli Alışveriş & 3D Secure</ul>
-                <ul>Visa/Mastercard</ul>
-                <ul>Orjinal Ürün</ul>
-            </li>
+            <ul>
+                <li>Mağazadan Teslim Al</li>
+                <li>Hızlı Kargo</li>
+                <li>Güvenli Alışveriş & 3D Secure</li>
+                <li>Visa/Mastercard</li>
+                <li>Orjinal Ürün</li>
+            </ul>
         </section>
         <h2>En Çok Satan Kostümler</h2>
         <section class="costumes">
-            <div class="headpart">
-               <div class="child">
-                <img src="./images/child1.jpg" alt="" width="500px"> 
-               </div>
-                <div class="b">
-                <img src="./images/child3.jpg" alt="" width="500px">
-                <img src="./images/adult1.jpg" alt="" width="500px">
-
-               
-               </div>
-               <div class="c">
-
-                
-                <img src="./images/adult2.jpg" alt="" width="500px"> 
-                <img src="./images/child4.jpg" alt="" width="500px">
-            </div>
-        </div>
-
            
+            <div class="costume-item">
+                <img src="./images/child1.jpg" alt="Çocuk Kostümü">
+            </div>
+            <div class="costume-item">
+                <img src="./images/adult1.jpg" alt="Yetişkin Kostümü">
+            </div>
+            <div class="costume-item">
+                <img src="./images/adult2.jpg" alt="Yetişkin Kostümü">
+            </div>
+            <div class="costume-item">
+                <img src="./images/child2.jpg" alt="Yetişkin Kostümü">
+            </div>
+            <div class="costume-item">
+                <img src="./images/child1.jpg" alt="Çocuk Kostümü">
+            </div>
+            <div class="costume-item">
+                <img src="./images/adult1.jpg" alt="Yetişkin Kostümü">
+            </div>
+            <div class="costume-item">
+                <img src="./images/adult2.jpg" alt="Yetişkin Kostümü">
+            </div>
+            <div class="costume-item">
+                <img src="./images/child2.jpg" alt="Yetişkin Kostümü">
+            </div>
+        
         </section>
     </main>
-    <section class="social">
-        <a href="#">
-            <i class=""></i>
-        </a>
-    </section>
-
+    <footer>
+        <p>&copy; 2024 Burak Kostüm. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
