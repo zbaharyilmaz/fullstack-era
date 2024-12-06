@@ -3,27 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./bicyle.css" />
-    <script src="app.js"></script>
-    <title>Autumn</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      
-      <div class="leaves">
-        <img src="./img/leaf_01.png" alt="" />
-        <img src="./img/leaf_02.png" alt="" />
-        <img src="./img/leaf_03.png" alt="" />
-        <img src="./img/leaf_04.png" alt="" />
-        <img src="./img/leaf_01.png" alt="" />
-        <img src="./img/leaf_02.png" alt="" />
-        <img src="./img/leaf_03.png" alt="" />
-        <img src="./img/leaf_04.png" alt="" />
-      </div>
-      
-      <div class="girl"><img src="./img/girl.png" alt="" /></div>
-      
-      
+    <div
+      class="tasiyici text-danger d-flex justify-content-center align-items-center"
+    >
+      <form>
+        <div class="conntainer p-5 rounded-5">
+          <h1 class="text-center text-danger fw-bold">Sign In</h1>
+          <div class="mb-3 mt-5">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Username"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn w-100 bg-danger btn-primary border-0"
+          >
+            Login
+          </button>
+          <div class="d-flex justify-content-between mt-3">
+            <label class="form-label">Forget Password</label>
+            <label class="form-label text-decoration-underline">Signup</label>
+          </div>
+        </div>
+      </form>
     </div>
+    <div class="yaprak">
+      <img src="./images/leaf_01.png" alt="" />
+      <img src="./images/leaf_02.png" alt="" />
+      <img src="./images/leaf_03.png" alt="" />
+      <img src="./images/leaf_04.png" alt="" />
+      <img src="./images/leaf_01.png" alt="" />
+      <img src="./images/leaf_02.png" alt="" />
+    </div>
+    <div class="front-image"><img src="./images/trees.png" alt="" /></div>
+    <div class="bisiklet"><img src="./images/girl.png" alt="" /></div>
   </body>
 </html>

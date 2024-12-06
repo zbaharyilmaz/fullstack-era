@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(./images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .conntainer {
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(18px);
+    max-height: 350px;
+  }
+  
+  .yaprak {
+    width: 100vw;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .yaprak img {
+    animation-name: fall;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .bisiklet {
+    position: absolute;
+    left: -5%;
+    top: 35%;
+    transform: rotateY(180deg);
+  }
+  
+  .bisiklet img {
+    width: 350px;
+    height: auto;
+    animation-name: action;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .front-image img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    /* left: 50%;
+    top: 35%; */
+  }
+  
+  @keyframes fall {
+    100% {
+      transform: translateY(1800%) rotate(360deg);
+    }
+  }
+  
+  @keyframes action {
+    50% {
+      transform: translateX(-2200px);
+    }
+    51% {
+      transform: translateX(-2200px) rotateY(180deg);
+    }
+    100% {
+      transform: translateX(500px) rotateY(180deg);
+    }
+  }
