@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Nova Square", sans-serif;
+    background-color: #d9d9d9;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    border: 5px groove white;
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: radial-gradient(circle, #a10909, #fafafa);
+    box-shadow: 10px -10px 1px red;
+    border-radius: 10px;
+  }
+  
+  .title {
+    color: red;
+    text-shadow: 2px -2px 1px rgb(255, 255, 255);
+  }
+  
+  .inputNumber {
+    height: 1.5rem;
+    width: 6rem;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .button,
+  .resetButton {
+    height: 1.5rem;
+    width: 4rem;
+    border-radius: 5px;
+    background-color: rgb(9, 92, 9);
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+  }
+  
+  .resetButton {
+    background-color: rgb(104, 0, 0);
+  }
+  
+  .text {
+    border: 2px inset #404040;
+    width: 85%;
+    height: 1.5rem;
+    border-radius: 5px;
+    background-color: black;
+    color: black;
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 2px;
+  }
+  
+  @media screen and (max-width: 162px) {
+    .title {
+      font-size: 1rem;
+    }
+    .inputNumber {
+      width: 4rem;
+      font-size: 0.6rem;
+    }
+    .button,
+    .resetButton {
+      width: 1.8rem;
+      font-size: 0.5rem;
+    }
+    .text {
+      width: 90%;
+      font-size: 0.6rem;
+    }
+  }
