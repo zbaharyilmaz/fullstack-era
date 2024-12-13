@@ -8,4 +8,4 @@ The task is to create a webpage that displays random user data, including the us
 
 The user data is fetched from the "Random User Generator API", and the challenge showcases how to format and present this data on the web page.
 
-Expected Outcome ("./randomUser.gif")
+Outcome ("./randomUser.gif")
