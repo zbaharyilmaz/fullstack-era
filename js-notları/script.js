@@ -12,7 +12,7 @@
 //Asenkron Çalışma (Event Loop):JavaScript, tek bir ana iş parçacığı (single-threaded) üzerinde çalışır. Ancak, zamanlama gerektiren görevler (örneğin setTimeout) arka planda farklı bir işlem kuyruğuna (event queue) gönderilir.Belirtilen süre tamamlandığında, bu işlem, JavaScript'in ana iş kuyruğu (call stack) boşaldığında çalıştırılır. setTimeout, belirttiğiniz süre kadar bekler, ancak belirtilen süre sona erdiğinde işlem hemen çalıştırılmayabilir. Bunun nedeni, ana iş kuyruğu doluysa zamanlanmış görevlerin sırasını beklemesidir. Bu durum, asenkron programlamanın temel özelliğidir.
 
 setTimeout(()=>{
-    console.log("Merhaba İlk");
+  console.log("Merhaba İlk");
 
 },3000)
 
@@ -28,8 +28,8 @@ console.log("Merhaba");
 
 let sayac=0;
 const interval1=setInterval(()=>{
-    console.log(++sayac);
-    if(sayac==5) clearInterval(interval1);
+  console.log(++sayac);
+  if(sayac==5) clearInterval(interval1);
 },3000)
 
 //++sayac 1 den başlattı. Değişkenin değeri önce artırılır, ardından bu yeni değer kullanılır.
@@ -58,24 +58,63 @@ const interval1=setInterval(()=>{
 //? then() ve catch() metotlari promise dondururler. Zincirleme (chain) olarak kullanilabilirler.
 
 new Promise((resolve, reject) => {
-    const success = true;
-    if (success) resolve("Başarılı!");
-    else reject("Hata!");
-  })
-  
-  const person = { name: "kağan", surname: "bilir" };
+  const success = true;
+  if (success) resolve("Başarılı!");
+  else reject("Hata!");
+})
 
-  new Promise((resolve, reject) => {
-    // if(databaseden veriler düzgün geldiyse)
-  //   if (true) {
-       if(false){
-      resolve(person); //person yerinde database in url si olur
-    } else {
-      reject(new Error("promise başarısız"));
-    }
-  })
-    .then((response) => console.log(response))
-    .catch((error) => console.log(error));
+const person = { name: "kağan", surname: "bilir" };
+
+new Promise((resolve, reject) => {
+  // if(databaseden veriler düzgün geldiyse)
+//   if (true) {
+     if(false){
+    resolve(person); //person yerinde database in url si olur
+  } else {
+    reject(new Error("promise başarısız"));
+  }
+})
+  .then((response) => console.log(response))
+  .catch((error) => console.log(error));
 
 
-//& FETCH API 
+//& FETCH API
+
+//Fetch API, JavaScript'te HTTP istekleri yapmak için kullanılan modern ve basit bir yöntemdir. İstekler ve yanıtlar üzerinde işlem yapmak için kullanılır ve genellikle asenkron işlemleri yönetmek için Promise tabanlıdır.
+
+//! syntax: fetch(url, options)
+//url: Zorunlu bir parametredir. İstek yapılacak kaynağın adresini belirtir (örneğin, bir API'nin URL'si).
+//options: İsteğe bağlı bir parametredir. Bu obje, istekle ilgili ek yapılandırmaları içerir (örn. HTTP yöntemi, başlıklar, gövde verisi gibi).
+
+//? fetch() fonksiyonu veri getirmek istediginiz kaynagin yolunu gosteren zorunlu bir parametre almaktadir ve bu istegin cevabini gosteren bir Promise dondurmektedir.
+//?! Bu baglamda syntatic sugar benzetmesi yapilabilir.
+
+//!throw ile hata fırlatırsak kodumuz o satırda durur. kodumuzu durdurmak istemezsek diğer sayfadaki kodları kullanırız.
+
+// Informational responses (100 – 199)
+// Successful responses (200 – 299)
+// Redirection messages (300 – 399)
+// Client error responses (400 – 499)
+// Server error responses (500 – 599)
+
+
+//! 1.metod: chain (zincir then)
+// fetch("https://api.github.com/users") //URL'ye bir GET isteği gönderir.
+//   .then((response) => response.json()) //Dönen Response nesnesinin gövdesini (body) JSON formatına dönüştürür.
+//   .then((data) => console.log(data))   // JSON verisini konsola yazdır
+//   .catch((error) => console.error(error)); // Eğer istek sırasında bir hata oluşursa, bu hatayı yakalar ve konsola yazdırır.
+
+fetch("https://api.github.com/users").then((response)=>response.json()).then((data)=>
+  ekranaBastir(data))
+const ekranaBastir=(veri)=>{
+ veri.forEach((kisi) => {
+  document.querySelector("section").innerHTML+=
+  `<h1>${kisi.login}</h1>
+  <img width= "300px" src= ${kisi.avatar_url}/>
+  <h3>${kisi.node_id}</h3>
+  `
+ });
+}
+//arrowlarda süslüler var. süslü dışında onları çağıramayız.return de yapabiliriz.
+
+
