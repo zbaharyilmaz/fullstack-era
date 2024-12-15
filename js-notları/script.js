@@ -99,22 +99,66 @@ new Promise((resolve, reject) => {
 
 
 //! 1.metod: chain (zincir then)
-// fetch("https://api.github.com/users") //URL'ye bir GET isteği gönderir.
-//   .then((response) => response.json()) //Dönen Response nesnesinin gövdesini (body) JSON formatına dönüştürür.
-//   .then((data) => console.log(data))   // JSON verisini konsola yazdır
-//   .catch((error) => console.error(error)); // Eğer istek sırasında bir hata oluşursa, bu hatayı yakalar ve konsola yazdırır.
 
-fetch("https://api.github.com/users").then((response)=>response.json()).then((data)=>
-  ekranaBastir(data))
+
+fetch("https://api.github.com/users")
+.then((response)=>{
+  if(response.ok==false){   //!res.ok
+    throw new Error("There is a mistake in url");
+  }
+  return response.json();
+})
+.then((data)=>ekranaBastir(data)).catch((error)=>console.log(error));
+
 const ekranaBastir=(veri)=>{
- veri.forEach((kisi) => {
+ veri.forEach(({login, avatar_url, node_id}) => {
   document.querySelector("section").innerHTML+=
-  `<h1>${kisi.login}</h1>
-  <img width= "300px" src= ${kisi.avatar_url}/>
-  <h3>${kisi.node_id}</h3>
+  `<h1>${login}</h1>
+  <img width= "300px" src= ${avatar_url}/>
+  <h3>${node_id}</h3>
   `
  });
 }
+//divler her zaman database kodlarından önce basılır.
+//destructring yapabiliriz.
 //arrowlarda süslüler var. süslü dışında onları çağıramayız.return de yapabiliriz.
 
 
+//!2.ASYNC-AWAIT
+
+//? Async-Await ECMAScript 2017 ile Javascript diline eklenmistir.
+//? Aslinda Promise yapisinin syntax olarak basitlestirilmis halidir.
+//?! Bu baglamda syntatic sugar benzetmesi yapilabilir.
+
+//* Bir fonksiyonu async  hale getirmek icin fonksiyon keyword'nun onune async keyword'u eklenir.
+
+//* Bir async fonksiyon icerisinde await keyword'u ile yapilan istegin cevabinin beklenmesi saglanir.
+
+//* Aslinda dizilis olarak senkron mantiga benzeyen kod yazarak Asenkron kod yazmayı mumkun kilar.
+
+//* Await, promise-temelli herhangi bir fonksiyonun onune getirilerek getirildigi satirdaki kodun durdurulmasini saglar. Yapilan istek yerine getirilip sonuc degerlerinin dondurulmesi ile kodun calismasi devam eder.
+//! JavaScript try anahtar kelimesi kod bloğundaki kodları çalışma zamanında test etmek için kullanılır.
+
+//! JavaScript catch anahtar kelimesi çalışma zaman hatası sonucu oluşan hataları ekrana yazdırmak için kullanılır.
+
+//! JavaScript throw anahtar kelimesi özel hata oluşturmayı sağlar.
+
+//! JavaScript finally anahtar kelimesi hata oluşması veya oluşmaması durumunda (her durumda) çalışacak kodları yazdırmak için kullanılır.
+const defaultImage= "./default-img.jpg"
+
+const getData=async()=>{
+  const res= await fetch("https://api.tvmaze.com/search/shows?q=girls")
+  const data= await res.json()
+  ekranBastir(data)
+}
+ 
+getData()
+const ekranBastir=(data)=>{
+  data.forEach((program)=>{
+    document.querySelector("section").innerHTML+=`
+    <h1>${program.show.name}</h1>
+    <img src= "${program.show.image?.medium || defaultImage}"/>` //ÖNEMLİ
+  })
+}
+
+ //https://api.tvmaze.com/api bu linki kullanabiliriz
