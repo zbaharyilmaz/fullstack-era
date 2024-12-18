@@ -38,6 +38,3 @@ let data1= array.meals.filter((a)=>a.strMeal.toLowerCase().includes(e.target.val
 showScreen(data1)
 
 
-
-//Second Project
-
