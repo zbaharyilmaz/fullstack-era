@@ -148,6 +148,8 @@ const defaultImage= "./default-img.jpg"
 
 const getData=async()=>{
   const res= await fetch("https://api.tvmaze.com/search/shows?q=girls")
+  if(!res.ok){   //!res.ok
+    throw new Error("There is a mistake in url");
   const data= await res.json()
   ekranBastir(data)
 }
