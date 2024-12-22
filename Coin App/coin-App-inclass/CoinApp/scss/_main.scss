@@ -1,0 +1,64 @@
+//*  ---- MAIN ----
+@use "variables" as *;
+
+main {
+  margin: 2rem 0;
+  .coins {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    .coin {
+      padding: 1.5rem;
+      border-radius: 10px;
+      background: $text_light;
+      color: $text_med;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      .remove-icon {
+        text-align: right;
+        .fa-window-close {
+          color: $red;
+          text-align: right;
+          cursor: pointer;
+        }
+      }
+      .coin-name {
+        sup {
+          font-size: 0.4em;
+          padding: 0.2em 0.6em;
+          border-radius: 30px;
+          color: $text_light;
+          background: $orange;
+        }
+      }
+
+      .coin-temp {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 0.5rem;
+        color: $text_dark;
+      }
+      figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        img {
+          width: 100px;
+        }
+        figcaption {
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
+
+  .coin-icon {
+    margin-top: 1rem;
+    width: 100px;
+    height: 100px;
+  }
+}

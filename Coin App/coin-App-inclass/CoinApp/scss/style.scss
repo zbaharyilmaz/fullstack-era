@@ -1,0 +1,46 @@
+//*  ---- STYLE.SCSS ----
+
+@use "variables" as *;
+@use "reset";
+@use "header";
+@use "main";
+@use "footer";
+@use "responsive";
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font: 1rem "Roboto", sans-serif;
+  background: $bg_main;
+  color: $text_dark;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}

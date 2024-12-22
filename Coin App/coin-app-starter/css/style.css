@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  color: #1e2432;
+}
+header h1 {
+  font-weight: 500;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+}
+header form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+header form input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid;
+}
+header form button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  padding: 1rem 1.6rem;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #ff1e42;
+  transition: background 0.3s ease-in-out;
+}
+header form button:hover {
+  background: #c3112d;
+}
+
+main {
+  margin: 2rem 0;
+}
+main .coins {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+main .coins .coin {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: #fff;
+  color: #53627c;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+main .coins .coin .remove-icon {
+  text-align: right;
+}
+main .coins .coin .remove-icon .fa-window-close {
+  color: #ff1e42;
+  text-align: right;
+  cursor: pointer;
+}
+main .coins .coin .coin-name sup {
+  font-size: 0.4em;
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  color: #fff;
+  background: #ff8c00;
+}
+main .coins .coin .coin-temp {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #1e2432;
+}
+main .coins .coin figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+main .coins .coin figure img {
+  width: 100px;
+}
+main .coins .coin figure figcaption {
+  letter-spacing: 0.05em;
+}
+main .coin-icon {
+  margin-top: 1rem;
+  width: 100px;
+  height: 100px;
+}
+
+footer {
+  text-align: right;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 2rem;
+}
+footer span {
+  color: #ff1e42;
+}
+
+@media screen and (max-width: 1000px) {
+  main .coins {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 700px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  header form {
+    flex-direction: column;
+  }
+  header form button,
+  header form input {
+    width: 100%;
+  }
+  main .coins {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 400px) {
+  main .coins {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font: 1rem "Roboto", sans-serif;
+  background: #9cccf3;
+  color: #1e2432;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+//*  ---- HEADER ----
+
+@use "variables" as *;
+
+header {
+  color: $text_dark;
+
+  h1 {
+    font-weight: 500;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    input {
+      font-size: 2rem;
+      padding: 0.5rem;
+      border-bottom: 1px solid;
+    }
+
+    button {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      padding: 1rem 1.6rem;
+      border-radius: 10px;
+      color: $text_light;
+      background-color: $red;
+      transition: background 0.3s ease-in-out;
+      &:hover {
+        background: $darkred;
+      }
+    }
+  }
+}

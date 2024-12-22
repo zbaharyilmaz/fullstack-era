@@ -1,0 +1,37 @@
+//*  ---- RESPONSIVE ----
+
+@media screen and (max-width: 1000px) {
+  main {
+    .coins {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    h1 {
+      font-size: 3rem;
+    }
+    form {
+      flex-direction: column;
+      button,
+      input {
+        width: 100%;
+      }
+    }
+  }
+  main {
+    .coins {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    .coins {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
