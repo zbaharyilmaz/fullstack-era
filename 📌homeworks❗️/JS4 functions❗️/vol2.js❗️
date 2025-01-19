@@ -3,8 +3,7 @@ Fibonacci Serisi Bulma: Kullanıcının girdiği sayıya kadar olan Fibonacci se
 Asal Sayı Kontrolü: Kullanıcıdan alınan sayının asal olup olmadığını kontrol eden bir fonksiyon yazın.
 Sayıların Tersini Bulma: Bir sayının tersini 123  321 gibi) bulan bir fonksiyon yazın.
 Js function assignment 1
-😊
-😇
+
 Mükemmel Sayı Kontrolü: Bir sayının kendisinden başka tüm bölenlerinin toplamı kendisine eşitse mükemmel sayıdır (örn. 6  1  2  3. Bu tanıma uyan sayıları bulan bir fonksiyon yazın.
 Armstrong Sayısı Kontrolü: Girilen bir sayının basamaklarının küplerinin toplamı kendisine eşitse Armstrong sayısıdır (ör. 153  13  53  33). Bu tür sayıları bulan bir fonksiyon yazın.
 İki Sayının EBOB'unu Bulma: Kullanıcıdan iki sayı alarak, bu iki sayının en büyük ortak bölenini EBOB bulan bir fonksiyon yazın.
