@@ -22,4 +22,4 @@ Js function assignment 2
 
 Bir Sayıyı Binary İkili) Sisteme Çevirme: Kullanıcının girdiği bir sayıyı ikili (binary) sisteme çeviren bir fonksiyon yazın.
 Pi'nin İlk N Basamağını Yazdırma: Girilen sayı kadar Pi'nin ilk basamağını ekrana yazdıran bir fonksiyon yazın Pi  3.14159... olarak kabul edin).
-Sayının Sayı Basamağı Olup Olmadığını Bulma: Kullanıcıdan bir sayı alarak, bu sayının içinde belirli bir basamak olup olmadığını kontrol eden bir fonksiyon yazın (örn. 752 içinde "5" rakamı var mı?.
+Sayının Sayı Basamağı Olup Olmadığını Bulma: Kullanıcıdan bir sayı alarak, bu sayının içinde belirli bir basamak olup olmadığını kontrol eden bir fonksiyon yazın.
